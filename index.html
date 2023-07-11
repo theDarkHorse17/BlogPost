@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Weekly Blog</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="star">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mbehind">
+        <h2 id="text">Holá Amigos</h2>
+        <a href="#about" class="btn" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mfromt">
+    </section>
+    <div id="about">
+        <h2>What is it about?</h2>
+        <p>"Hey there! As a not-so-famous college student, I've embraced reading as a major habit, especially during the COVID-19 pandemic. 
+            And you know what? I just couldn't let go of it. But hey, that's a good thing because it led me to a brilliant idea. I thought, 
+            why not create a website where I can share captivating book summaries with those who may not have the time or means to read the 
+            books themselves? And here's where it gets interesting—I'd love for you to be a part of it. <br><br>
+
+            Now, let's talk about my passion for books and, well, women. I take immense pride in my diversified taste when it comes to both. 
+            Just like my love for all kinds of books, I appreciate and adore the unique qualities of every woman. There's something enchanting 
+            about exploring different worlds through literature and connecting with fascinating individuals like you. <br><br>
+            
+            From books that delve into the depths of human emotions to those that spark joy and inspiration, I've delved into an eclectic mix of
+            genres and authors. And guess what? I want to share it all with you. So why not take a quick peek at my website? You'll find carefully
+            crafted summaries that capture the essence of each book—enough to ignite your curiosity and leave you wanting more. Trust me, there's 
+            a captivating world waiting for us to explore together. <br><br>
+            
+            If you're intrigued and want to join me on this literary adventure, I invite you to check out the summaries on my website. 
+            Let's indulge in the magic of books and discover new dimensions of our shared interests. <br><br>
+            
+            Looking forward to your visit, and who knows? Perhaps we'll find more than just books to discuss. 😉" <br><br>
+
+            If you want to know my name I go by <a href="#">.....</a>
+        </p>
+    </div>
+    <div id= "contact">
+        <h1>Wait....<br>You are fun to be around <br> Let's talk more</h1>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dibyendu-mondal-4a7230257/" ><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="7044210578" id="ws"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCpQzFmQXfpTSMbZrtslpMGmgQNrfsmKVrKfWFsSlHHcLsMQXlnfSHRWXScWfrkhfMVcQf" id="mnk"><i class="fa-brands fa-mailchimp"></i></a>
+        </div>
+    </div>
+    <script>
+        let star=document.getElementById('star');
+        let moon=document.getElementById('moon');
+        let mbehind=document.getElementById('mbehind');
+        let text=document.getElementById('text');
+        let btn=document.getElementById('btn');
+        let mfront=document.getElementById('mfront'); 
+        let header=document.querySelector('header');
+        let about=document.getElementById('about');
+
+        window.addEventListener('scroll',function(){
+            let value =window.scrollY;
+            star.style.left= value *0.25+ 'px';
+            moon.style.top= value *1.05+ 'px';
+            mbehind.style.top= value *0.5+ 'px';
+            btn.style.marginTop=value*1.5+'px';
+            text.style.marginRight=value*4+'px';
+            text.style.marginTop=value*1.5+'px';
+            header.style.top=value*0.5+'px';
+            about.style.right=value*0.08+'px';
+           
+        })
+    </script>
+    
+</body>
+
+</html>
